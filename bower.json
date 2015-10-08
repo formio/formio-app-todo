@@ -12,7 +12,7 @@
     "moment": "~2.10.3",
     "animate.css": "~3.3.0",
     "angular": "~1.4.0",
-    "formio": "~0.1.9",
+    "formio": "develop",
     "ngmap": "~1.13.4"
   },
   "devDependencies": {
