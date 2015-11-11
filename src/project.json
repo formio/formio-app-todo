@@ -2,6 +2,10 @@
   "title": "ToDo Application",
   "description": "A simple to-do application.",
   "name": "todo",
+  "preview": {
+    "url": "http://formio.github.io/formio-app-todo",
+    "repo": "https://github.com/formio/formio-app-todo"
+  },
   "roles": {
     "administrator": {
       "title": "Administrator",
