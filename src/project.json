@@ -3,7 +3,7 @@
   "description": "A simple to-do application.",
   "name": "todo",
   "preview": {
-    "url": "http://formio.github.io/formio-app-todo",
+    "url": "http://formio.github.io/formio-app-todo/dist",
     "repo": "https://github.com/formio/formio-app-todo"
   },
   "roles": {
