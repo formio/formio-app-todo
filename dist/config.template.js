@@ -6,9 +6,6 @@ APP_URL = '{{ protocol }}://{{ path }}.{{ host }}';
 API_URL = '{{ protocol }}://api.{{ host }}';
 {% endif %}
 
-var APP_URL = 'https://todoapp.form.io';
-var API_URL = 'https://api.form.io';
-
 // Parse query string
 var query = {};
 location.search.substr(1).split("&").forEach(function(item) {
