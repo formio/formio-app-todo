@@ -40,13 +40,13 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li ng-if="authenticated" class="active"><a href="#/">Home</a></li>
+              <li ng-if="authenticated" class="active"><a ui-sref="home">Home</a></li>
               <li><a href="#" onclick="window.location.reload(true)">
                 <span style="font-size: 1.4em" class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li ng-if="authenticated"><a href="#">Hello {{ user.data.fullName }}</a></li>
+              <li ng-if="authenticated">Hello {{ user.data.fullName }}</li>
               <li ng-if="authenticated"><a href="#" ng-click="logout()"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
             </ul>
           </div><!--/.nav-collapse -->
