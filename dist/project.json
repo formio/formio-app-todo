@@ -173,7 +173,7 @@
           "prefix": "",
           "suffix": "",
           "protected": true,
-          "persistent": true,
+          "persistent": false,
           "type": "password",
           "validate": {
             "required": true,
