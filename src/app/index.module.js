@@ -6,6 +6,7 @@
       'ui.router',
       'ui.bootstrap',
       'formio',
+      'ngFormioHelper',
       'bgf.paginateAnything',
       'ngMap'
     ]);
