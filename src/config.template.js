@@ -22,5 +22,5 @@ angular.module('formioAppTodo').constant('AppConfig', {
     userLoginForm: appUrl + '/user/login',
     userRegisterForm: appUrl + '/user/register',
     todoForm: appUrl + '/todo'
-  },
+  }
 });

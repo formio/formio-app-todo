@@ -17,6 +17,11 @@
         // Initialize the authentication for form.io.
         FormioAuth.init();
 
+        $rootScope.$on('formio.unauthorized', function() {
+          $rootScope.setUser(null, null);
+          $state.go('auth.login', {}, {reload: true});
+        });
+
         // Add the forms to the root scope.
         angular.forEach(AppConfig.forms, function(url, form) {
           $rootScope[form] = url;
