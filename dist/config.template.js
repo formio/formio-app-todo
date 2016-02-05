@@ -12,7 +12,15 @@ location.search.substr(1).split("&").forEach(function(item) {
     query[item.split("=")[0]] = item.split("=")[1] && decodeURIComponent(item.split("=")[1]);
 });
 
+var appUrl = query.appUrl || APP_URL;
+var apiUrl = query.apiUrl || API_URL;
 angular.module('formioAppTodo').constant('AppConfig', {
-  appUrl: query.appUrl || APP_URL,
-  apiUrl: query.apiUrl || API_URL
+  appUrl: appUrl,
+  apiUrl: apiUrl,
+  forms: {
+    userForm: appUrl + '/user',
+    userLoginForm: appUrl + '/user/login',
+    userRegisterForm: appUrl + '/user/register',
+    todoForm: appUrl + '/todo'
+  },
 });
