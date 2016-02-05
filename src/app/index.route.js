@@ -46,16 +46,18 @@
       templates: {
         view: 'views/todo/view.html'
       },
-      view: ['$scope', function($scope) {
-        $scope.position = {lat: '40.74', lng: '-74.18'};
-        $scope.currentResource.loadSubmissionPromise.then(function() {
-          if (!$scope.currentResource.resource) { return; }
-          if ($scope.currentResource.resource.data.address) {
-            $scope.position.lat = $scope.currentResource.resource.data.address.geometry.location.lat;
-            $scope.position.lng = $scope.currentResource.resource.data.address.geometry.location.lng;
-          }
-        });
-      }]
+      controllers: {
+        view: ['$scope', function($scope) {
+          $scope.position = {lat: '40.74', lng: '-74.18'};
+          $scope.currentResource.loadSubmissionPromise.then(function() {
+            if (!$scope.currentResource.resource) { return; }
+            if ($scope.currentResource.resource.data.address) {
+              $scope.position.lat = $scope.currentResource.resource.data.address.geometry.location.lat;
+              $scope.position.lng = $scope.currentResource.resource.data.address.geometry.location.lng;
+            }
+          });
+        }]
+      }
     });
     $urlRouterProvider.otherwise('/');
   }
