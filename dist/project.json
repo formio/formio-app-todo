@@ -322,6 +322,7 @@
         "resource": "user",
         "role": "authenticated",
         "fields": {
+          "fullName": "fullName",
           "email": "email",
           "password": "password"
         }
