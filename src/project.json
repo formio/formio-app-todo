@@ -28,74 +28,6 @@
     }
   },
   "forms": {
-    "adminLogin": {
-      "title": "Admin Login",
-      "type": "form",
-      "name": "adminLogin",
-      "path": "admin/login",
-      "components": [
-        {
-          "input": true,
-          "tableView": true,
-          "inputType": "email",
-          "label": "Email",
-          "lockKey": true,
-          "key": "email",
-          "placeholder": "Enter your email address",
-          "prefix": "",
-          "suffix": "",
-          "defaultValue": "",
-          "protected": false,
-          "unique": false,
-          "persistent": true,
-          "type": "email"
-        },
-        {
-          "input": true,
-          "tableView": false,
-          "inputType": "password",
-          "label": "Password",
-          "lockKey": true,
-          "key": "password",
-          "placeholder": "Enter your password.",
-          "prefix": "",
-          "suffix": "",
-          "protected": true,
-          "persistent": true,
-          "type": "password"
-        },
-        {
-          "input": true,
-          "label": "Submit",
-          "tableView": false,
-          "key": "submit",
-          "size": "md",
-          "leftIcon": "",
-          "rightIcon": "",
-          "block": false,
-          "action": "submit",
-          "disableOnInvalid": true,
-          "theme": "primary",
-          "type": "button"
-        }
-      ],
-      "access": [
-        {
-          "type": "read_all",
-          "roles": [
-            "anonymous"
-          ]
-        }
-      ],
-      "submissionAccess": [
-        {
-          "type": "create_own",
-          "roles": [
-            "anonymous"
-          ]
-        }
-      ]
-    },
     "userRegister": {
       "title": "User Register",
       "type": "form",
@@ -324,7 +256,7 @@
       "method": ["create"],
       "handler": ["before"],
       "settings": {
-        "resources": ["user"],
+        "resources": ["user", "admin"],
         "username": "email",
         "password": "password"
       }
@@ -354,19 +286,6 @@
       "handler": ["before"],
       "settings": {
         "resources": ["user"],
-        "username": "email",
-        "password": "password"
-      }
-    },
-    "adminLogin": {
-      "name": "login",
-      "title": "Login",
-      "form": "adminLogin",
-      "priority": 2,
-      "method": ["create"],
-      "handler": ["before"],
-      "settings": {
-        "resources": ["admin"],
         "username": "email",
         "password": "password"
       }
