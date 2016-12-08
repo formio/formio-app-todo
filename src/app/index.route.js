@@ -16,10 +16,11 @@
   ) {
 
     // Set the base url for formio.
-    FormioProvider.setBaseUrl(AppConfig.apiUrl);
+    FormioProvider.setApiUrl(AppConfig.apiUrl);
     FormioProvider.setAppUrl(AppConfig.appUrl);
     FormioAuthProvider.register('login', 'user');
     FormioAuthProvider.register('register', 'user');
+    FormioAuthProvider.setForceAuth(true);
     $stateProvider
       .state('home', {
         url: '/',
