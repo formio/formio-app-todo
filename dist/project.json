@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "name": "todo",
   "preview": {
-    "url": "http://formio.github.io/formio-app-todo/dist",
+    "url": "https://formio.github.io/formio-app-todo/dist",
     "repo": "https://github.com/formio/formio-app-todo"
   },
   "roles": {
